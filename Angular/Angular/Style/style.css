@@ -1,0 +1,121 @@
+﻿.contentpages {
+    height: 45vh;
+    width: 58%;
+    border: 1px solid;
+}
+
+
+.multi-icons-two {
+    width: 80px;
+    float: left;
+}
+
+.ico-delete-24 {
+    background: url(../Style/Images/delete84.png) right center no-repeat;
+    height: 24px;
+    width: 24px;
+    float: left;
+}
+
+.ico-edit-24 {
+    background: url(../Style/Images/edit18.png) right center no-repeat;
+    height: 24px;
+    width: 24px;
+    float: left;
+}
+
+table {
+    border: 2px solid;
+    margin-left: 20%;
+    margin-bottom: 2%;
+}
+
+thead {
+    background-color: gray;
+}
+
+th {
+    margin-top: 10px;
+    border: 1px solid;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+td {
+    margin-top: 10px;
+    border: 1px solid;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+tr {
+    margin: 10px;
+    height: 50px;
+}
+
+button {
+    font-size: 15px;
+    height: 45px;
+    margin-left: 40%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.list {
+    width: 58%;
+    border: 1px solid;
+}
+
+.detail {
+    height: 45vh;
+    width: 58%;
+    border: 1px solid;
+}
+
+    .detail form {
+        margin-top: 4%;
+    }
+
+.row {
+    height: 45px;
+    font-size: 20px;
+}
+
+    .row label {
+        float: left;
+        margin-left: 10%;
+        width: 12%;
+    }
+
+        .row label span {
+            color: red;
+            font-size: 15px;
+        }
+
+    .row button {
+        margin-left: 5%;
+    }
+
+    .row input {
+        float: left;
+        margin-left: 5%;
+        width: 25%;
+    }
+
+.validationMsgText {
+}
+
+.validationMsgContainer {
+    font-size: 15px;
+    color: red;
+    padding-left: 2%;
+}
+
+.row input[type="checkbox"] {
+    text-align: center;
+    width:auto!important;
+}
+
+.btnDiv {
+    margin-left: 23%;
+}

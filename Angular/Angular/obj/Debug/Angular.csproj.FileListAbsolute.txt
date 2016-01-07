@@ -1,0 +1,11 @@
+D:\ZAppa_Local\LearnAngular\Angular\Angular\bin\Angular.dll
+D:\ZAppa_Local\LearnAngular\Angular\Angular\bin\Angular.pdb
+D:\ZAppa_Local\LearnAngular\Angular\Angular\obj\Debug\Angular.csprojResolveAssemblyReference.cache
+D:\ZAppa_Local\LearnAngular\Angular\Angular\obj\Debug\Angular.dll
+D:\ZAppa_Local\LearnAngular\Angular\Angular\obj\Debug\Angular.pdb
+D:\ZAppa_Local\LearnAngular\Angular\Angular\bin\Angular.dll.config
+D:\Angular\Exam\Angular\Angular\bin\Angular.dll
+D:\Angular\Exam\Angular\Angular\bin\Angular.pdb
+D:\Angular\Exam\Angular\Angular\obj\Debug\Angular.csprojResolveAssemblyReference.cache
+D:\Angular\Exam\Angular\Angular\obj\Debug\Angular.dll
+D:\Angular\Exam\Angular\Angular\obj\Debug\Angular.pdb

@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>My App</title>
+    <link href="Style/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div ng-app="myApp">        
+        <header ng-include="'templates/nav.html'"></header>
+        <div ui-view ></div>
+        <footer ng-include="'templates/footer.html'"></footer>        
+    </div>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="myApp.js"></script>    
+    <script src="UserController.js"></script>
+</body>
+</html>

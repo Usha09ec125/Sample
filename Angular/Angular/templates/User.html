@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <div>
+        <div id="listing" class="list" ng-show="ShowList">
+            <button ng-click="GetUserById(0)">Add New User</button>
+            <table cellpadding="0" cellspacing="0">
+                <thead>
+                <th hidden>User Id</th>
+                <th>Email</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Is active?</th>
+                <th>Action</th>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="user in userslist">
+                        <td hidden>{{user.UserId}}</td>
+                        <td>{{user.Email}}</td>
+                        <td>{{user.FirstName}}</td>
+                        <td>{{user.LastName}}</td>
+                        <td>
+                            <input type="checkbox" ng-model="user.isActive" ng-checked="user.isActive" />
+                        </td>
+                        <td>
+                            <div class="multi-icons-two">
+                                <a ng-click="GetUserById(user.UserId)" class="ico-edit-24"></a>
+                                <a ng-click="delete(user.UserId)" class="ico-delete-24"></a>
+                            </div>
+                            <div class="clearfix"></div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="detail" class="detail" ng-hide="ShowList">
+            <form name="userform">
+                <div class="row">
+                    <label>Email id <span>*</span></label>                    
+                    <input type="email" name="email" ng-model="currentUser.Email" required />
+                    <span class="validationMsgContainer" ng-if="userform.email.$dirty && userform.email.$invalid">
+                        <span class="validationMsgText" ng-if="userform.email.$error.required">Please enter email id</span>
+                        <span class="validationMsgText" ng-if="userform.email.$error.email">Please enter valid email id</span>
+                    </span>
+                </div>
+                <div class="row">
+                    <label>First name <span>*</span></label>
+                    <input name="firstname" ng-model="currentUser.FirstName" required />
+                    <span class="validationMsgContainer" ng-if="userform.firstname.$dirty && userform.firstname.$invalid">
+                        <span class="validationMsgText" ng-if="userform.firstname.$error.required">Please enter first name</span>                        
+                    </span>
+                </div>
+                <div class="row">
+                    <label>Last name <span>*</span></label>
+                    <input name="lastname" ng-model="currentUser.LastName" required />
+                    <span class="validationMsgContainer" ng-if="userform.lastname.$dirty && userform.lastname.$invalid">
+                        <span class="validationMsgText" ng-if="userform.lastname.$error.required">Please enter last name</span>
+                    </span>
+                </div>                
+                <div class="row">
+                    <label>Cell 1 <span>*</span></label>
+                    <input name="mobile1" ng-model="currentUser.Mobile1" ng-minlength="10" ng-maxlength="10" required />
+                    <span class="validationMsgContainer" ng-if="userform.mobile1.$dirty && userform.mobile1.$invalid">
+                        <span class="validationMsgText" ng-if="userform.mobile1.$error.required">Please enter mobile number</span>
+                        <span class="validationMsgText" ng-if="userform.mobile1.$error.minlength">Please enter 10 digit number</span>
+                        <span class="validationMsgText" ng-if="userform.mobile1.$error.maxlength">Please enter 10 digit number</span>
+                    </span>
+                </div>
+                <div class="row">
+                    <label>Cell 2</label>
+                    <input name="mobile2" ng-model="currentUser.Mobile2" ng-minlength="10" ng-maxlength="10" />
+                    <span class="validationMsgContainer" ng-if="userform.mobile2.$dirty && userform.mobile2.$invalid">                        
+                        <span class="validationMsgText" ng-if="userform.mobile2.$error.minlength">Please enter 10 digit number</span>
+                        <span class="validationMsgText" ng-if="userform.mobile2.$error.maxlength">Please enter 10 digit number</span>
+                    </span>
+                </div>
+                <div class="row">
+                    <label>Is active?</label>
+                    <input type="checkbox" ng-model="currentUser.isActive" />
+                </div>
+                <div class="row">
+                    <div class="btnDiv">
+                        <button ng-click="SaveUser()" ng-disabled="!userform.$valid">Save</button>
+                        <button ng-click="CancelUserSave()">Cancel</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
